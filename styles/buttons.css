@@ -1,0 +1,53 @@
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  border-radius: 0.75rem;
+  background-color: var(--color-brand);
+  overflow: hidden;
+  
+  &:hover {
+    background-color: var(--color-brand-hover);
+  }
+}
+
+.text-field {
+  border: 1px solid var(--border-primary);
+
+  &:hover {
+    border: 1px solid var(--border-hover);
+  }
+}
+
+
+
+.checkbox {
+
+
+}
+
+@media (min-width: 80rem) {
+
+.btn{
+  width: 10rem;
+  height: 2.75rem;
+  background-color: var(--color-brand);
+
+  &:hover {
+    background-color: var(--color-brand-hover);
+  }
+}
+
+.text-field {
+
+}
+
+.checkbox {
+
+
+}
+
+}
