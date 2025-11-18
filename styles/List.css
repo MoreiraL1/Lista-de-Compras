@@ -1,11 +1,72 @@
 .title {
-  border: 1px solid gold;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 .add-item {
 display: flex;
+flex-direction: column;
+width: 20.375rem;
+gap: 1rem;
+margin-top: 2.75rem;
+align-items: center;
+justify-content: center;
+
+}
+
+input{
+  outline: none;
+  width: 20.375rem;
+  height: 2.75rem;
+  border: 1px solid var(--border-primary);
+  border-radius: 0.75rem;
+   &:hover {
+    border: 1px solid var(--border-hover);
+  }
+  &:focus {
+    border: 1px solid var(--color-brand);
+  }
+}
+.list-container{
+  margin-top: 2.5rem;
+}
+
+.list {
+display: flex;
+flex-direction: column;
+gap: 0.75rem;
+
+}
+
+.item-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  width: 20.44rem;
+  height: 3.56rem;
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 0.75rem;
+}
+.check-item-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+@media (min-width: 80rem) {
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-item {
+display: flex;
+flex-direction:row;
+width: 40rem;
 gap: 1rem;
 margin-top: 2.75rem;
 align-items: center;
@@ -16,4 +77,13 @@ input{
   height: 2.75rem;
   border: 1px solid var(--border-primary);
   border-radius: 0.75rem;
+
+  &:hover {
+    border: 1px solid var(--border-hover);
+  }
+  &:focus {
+    border: 1px solid var(--color-brand);
+  }
+}
+  
 }

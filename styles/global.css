@@ -32,7 +32,7 @@
 --paragraph: 500 1rem/1.25rem var(--font-family);
 --link: 500 0.875rem/1rem var(--font-family);
 }
-
+/*
 .title {
   font-family: var(--font-family);
   font-size: 1.5rem;
@@ -56,16 +56,20 @@
   font-size: 0.875rem;
   line-height: 1rem;
   font-weight: 500;
-}
+}*/
 
 #app {
   display: flex;
   flex-direction: column;
-  width: 39.2rem;
+  width: 20.2rem;
   margin-inline: auto;
   justify-content: center;
-  border: 1px solid red;
+  
   overflow: hidden;
+}
+
+body{
+  background-color: var(--background-primary);
 }
 
 h1 {
@@ -77,13 +81,31 @@ a {
   color: var(--always-white);
 }
 
+span {
+font: var(--paragraph);
+color: var(--content-secondary);
+}
 
-.descktop-only{
+.desktop-only{
 display: none;
 }
+
+
+
+
 @media (min-width: 80rem) {
 
-  .descktop-only{
+  #app {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  margin-inline: auto;
+  justify-content: center;
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+.desktop-only{
   display: block;
 }
 

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10rem;
+  width: 20.375rem;
   height: 2.75rem;
   line-height: 2.75rem;
   border-radius: 0.75rem;
@@ -22,12 +22,19 @@
   }
 }
 
-
-
 .checkbox {
+  transiton: fill 0.3s ease;
 
-
+  &:hover{
+  stroke: var(--color-brand-hover);
+  }
+  &:active {
+  fill: var(--color-brand);  
+  stroke: var(--color-brand);
+  }
 }
+
+
 
 @media (min-width: 80rem) {
 
