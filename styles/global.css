@@ -58,14 +58,24 @@
   font-weight: 500;
 }*/
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 #app {
   display: flex;
   flex-direction: column;
   width: 21.2rem;
   margin-inline: auto;
   justify-content: center;
-  
+  padding-bottom: 5rem;
   overflow: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  box-sizing: border-box;
+
 }
 
 body{

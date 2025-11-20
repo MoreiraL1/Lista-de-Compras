@@ -32,12 +32,30 @@ input{
 }
 .list-container{
   margin-top: 2.5rem;
+  max-height: 45vh; 
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.5rem;
+
+  & .list-container::-webkit-scrollbar {
+  width: 6px;
+}
+& .list-container::-webkit-scrollbar-thumb {
+  background-color: var(--border-primary);
+  border-radius: 4px;
+}
+
+
 }
 
 #list {
 display: flex;
 flex-direction: column;
 gap: 0.75rem;
+margin: 0;
+padding: 0;
+list-style: none;
+
 
 }
 
@@ -69,7 +87,7 @@ gap: 0.75rem;
 .add-item {
 display: flex;
 flex-direction:row;
-width: 40rem;
+width: 39.1875rem;
 gap: 1rem;
 margin-top: 2.75rem;
 align-items: center;
