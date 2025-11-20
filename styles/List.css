@@ -20,6 +20,9 @@ input{
   height: 2.75rem;
   border: 1px solid var(--border-primary);
   border-radius: 0.75rem;
+  padding: 1.125rem;
+  color: var(--content-primary);
+
    &:hover {
     border: 1px solid var(--border-hover);
   }
@@ -31,7 +34,7 @@ input{
   margin-top: 2.5rem;
 }
 
-.list {
+#list {
 display: flex;
 flex-direction: column;
 gap: 0.75rem;
@@ -85,5 +88,12 @@ input{
     border: 1px solid var(--color-brand);
   }
 }
+.item-list {
+  margin-inline: auto;
+  padding: 0.75rem;
+  width: 39.1875rem;
+  height: 3.0625rem;
+}
+
   
 }

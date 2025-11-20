@@ -61,7 +61,7 @@
 #app {
   display: flex;
   flex-direction: column;
-  width: 20.2rem;
+  width: 21.2rem;
   margin-inline: auto;
   justify-content: center;
   
@@ -101,7 +101,6 @@ display: none;
   width: 40rem;
   margin-inline: auto;
   justify-content: center;
-  border: 1px solid red;
   overflow: hidden;
 }
 
